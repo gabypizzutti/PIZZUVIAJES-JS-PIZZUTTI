@@ -41,6 +41,9 @@ Es un botón que se utiliza para que el usuario clickee y en la pantalla se vea 
 ### PAGE CHECKOUT DE PAGO 
 * El usuario ingresará los datos del pago , en caso de seleccionar diferentes cantidad de cuotas aparecerá el precio.
 
+### PAGE AUTO
+* El usuario al seleccionar los campos de lugar de retiro, fecha de retiro , hora de retiro, fecha de devolucion y hora de devolucion , mostrará las opcioness.
+
 ### MAIN JS
 Se utliza para pages vuelos.
 
