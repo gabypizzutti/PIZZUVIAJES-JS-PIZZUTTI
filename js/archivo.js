@@ -34,8 +34,6 @@ function procesar(e){
     const dato = new Datos (nombre, apellido,residencia,tipoDocumento,documento, nacimiento, sexo, mail, telefono);
 
     datos.push(dato);
-    console.log(datos);
-
      
     Swal.fire({
     position: 'center',

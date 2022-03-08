@@ -41,7 +41,6 @@ class Destino {
     }
 }
 
-////operador ternario ///////
 class TramoElegido{
     constructor (tramo) {
         this.tramoElegido = tramo
@@ -77,15 +76,15 @@ function fetchDestinos() {
     
     }
 
-//ejecuto la funcion que carga todos los destinos 
+//ejecuta la funcion que carga todos los destinos 
 fetchDestinos();
 
 //destructuracion
 const [destino1, destino2, destino3, destino4, destino5, destino6, destino7, destino8, destino9, destino10, destino11, destino12, destino13] = todosLosDestinos
 
 /**
- * @function mostrarFechaRegreso hace que en caso de que el pasajero elija solo ida , 
- * no se muestre en las opciones  el regreso.
+ * @function mostrarFechaRegreso hace que en caso de que el usuario elija solo ida , 
+ * no se muestre en las opciones del regreso.
  */
 function mostrarFechaRegreso() {
     let tramo = eleccionDeTramo();
@@ -197,7 +196,7 @@ function mostrarHistorialCompra (){
 
 mostrarHistorialCompra();
 
-// funcion para que guarde muestre en pantalla la ultima busqueda que hizo el usuario y no finalizo compra 
+// funcion para que guarde muestre en pantalla la ultima busqueda que hizo el usuario en caso de no haber finalizado la compra 
 function utilizarDatos (){
     let datosCompra = localStorage.getItem("cotizacionActual")
     if(datosCompra != null){
