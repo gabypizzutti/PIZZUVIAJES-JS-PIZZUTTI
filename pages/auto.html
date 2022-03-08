@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nombre de la web e icono -->
+    <title>Auto - Pizzu Viajes</title>
+    <link rel="icon" href="../assets/logo.jpg" alt="logo">
+     <!-- mi css animate -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- aos -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Pacifico&family=Permanent+Marker&family=Raleway:ital,wght@0,100;1,100;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Pacifico&family=Permanent+Marker&family=Raleway:ital,wght@0,100;1,100;1,200&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <!-- mi css -->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="item col-lg-12 col-xs-12">
+                <span><img class="icono" src="../assets/icono-phone.svg" alt="phone" title="telefono">0810-222-3333</span>
+                <span><img class="icono" src="../assets/icono-wtp.png" alt="wtp" title="whatsapp">+5411 2233-4455</span>
+                <span><img class="icono" src="../assets/icono-help.svg" alt="help" title="ayuda">Ayuda</span>
+                <span><img class="icono" src="../assets/icono-sesion.svg" alt="sesion" title="inicar sesion">Iniciar sesión</span>
+            </div>  
+        </div> 
+           <!-- header -->
+        <header>
+            <div class="row no-gutters">
+                <div class="col-lg-12 col-xs-12">
+                    <!-- nav -->
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #26c9a2";> 
+                        <a class="botonIndex animate__animated animate__heartBeat" style="text-decoration: none" href="../index.html">
+                            <img class="logo d-block mx-auto"  src="../assets/globo.svg" alt="logo pizzu viajes" title="pizzu viajes">
+                            <h1 class="nombreLogo">PIZZU VIAJES</h1>
+                        </a> 
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="vuelo.html"><img class="imagen"  src="../assets/plane-solid.svg" alt="avion">VUELO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="hotel.html"><img class="imagen" src="../assets/bed-solid.svg" alt="hotel">HOTEL</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html"><img class="imagen" src="../assets/car-solid.svg" alt="auto">AUTO</a>
+                                </li>
+                                <li class="nav-item">
+                                     <a class="nav-link" href="paquete.html"><img class="imagen" src="../assets/suitcase-solid.svg" alt="paquete">PAQUETE</a>
+                                </li>
+                            </ul>
+                        </div>    
+                    </nav>
+                    <!-- fin nav -->
+                </div> 
+            </div>  
+        </header>
+        <!-- fin header -->
+        <div class="row">
+            <div class="col-lg-12 col-xs-12">
+                <h4 class="titleFirst text-center pb-3 pt-3">Encontrá el auto que queres...</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-6 pt-3 mx-auto text-center">
+                <label for="inputState">LUGAR DE RETIRO</label>
+                <select id="lugarRetiro" class="form-control mx-auto text-center" style="width: 250px;">
+                    <option>Aeropuerto Jorge Newberry - Buenos Aires</option>
+                    <option>Aeropuerto Córdoba / Ing. Aer. Ambrosio Taravella - Córdoba</option>
+                    <option>Aeropuerto Internacional El Plumerillo - Mendoza</option>
+                    <option>Aeropuerto Internacional de São Paulo-Guarulhos - Brasil</option>
+                    <option>Aeropuerto Internacional Cataratas del Iguazú (IGR)</option>
+                    <option>Aeropuerto Internacional de Galeão - Río de Janeiro</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-fluid d-flex justify-content-lg-center">
+            <div class="row">  
+                <div class="form-inline">
+                    <label class="ml-3 mt-2" for="inputState">FECHA DE RETIRO</label>
+                    <div>
+                        <input id="fechaRetiro" type="date" name="FechaIn" class="form-control ml-3 mt-2" style="width:170px;">
+                    </div>
+                    <label class="ml-lg-1 mt-4 mt-lg-3 pl-4" for="inputState">HORA DE RETIRO</label>
+                    <div>
+                        <input id="horaRetiro" type="time" name="time" class="form-control ml-2 mt-3 mt-lg-3" style="width:120px;">
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="container-fluid d-flex justify-content-lg-center">
+            <div class="row">  
+                <div class="form-inline mt-4 mb-4">
+                    <label class="ml-3 mt-2" for="inputState">FECHA DEVOLUCIÓN</label>
+                    <div>
+                        <input id ="fechaDevolucion" type="date" name="FechaOut" class="form-control ml-3 mt-2" style="width:170px;">
+                    </div>
+                    <label class="ml-1 ml-lg-3 mt-4 mt-lg-3 pl-3" for="inputState">HORA DE DEVOLUCIÓN</label>
+                    <div>
+                        <input id="horaDevolucion" type="time" name="time" class="form-control ml-2 mt-3 mt-lg-3" style="width:120px;">
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="col-lg-12 col-xs-12">
+            <div class="row pt-lg-3 justify-content-lg-center pb-4">
+              <button id="btnAuto" type="button" class="btn btn-primary">Buscar opciones!</button>
+            </div>
+        </div>
+        <div id="opcionesAuto" style="display:none">
+        <div class="row">
+            <div class="col-lg-12 col-xs-12">
+                <h4 class="titleFirst text-center pb-3">Estos son los autos que se adaptan a tu búsqueda...</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-xs-12">
+                <h5 class="text-center pt-3">Volkswagen</h5>
+                <p class="text-center">o similar , de categoría auto económico</p>
+                <div class="atribute col-lg-12 ml-1">
+                    <img class="iconCar" src="../assets/icono-sesion.svg" alt="personas">
+                    <span class="pCar">4 personas</span>
+                    <img class="iconCar" src="../assets/suitcase-solid.svg" alt="valija">
+                    <span class="pCar">1 valija</span>
+                    <img class="iconCar" src="../assets/icono-ac.svg" alt="aire acondicionado">
+                    <span class="pCar">A/C</span>
+                    <img class="iconCar" src="../assets/icono-automatico.jpeg" alt="automatico">
+                    <span class="pCar">Automático</span> 
+                </div>
+                <p class="titleFirst text-center pt-3">Precio final por día  AR$ 9280</p>
+            </div>    
+            <div class="col-lg-3 col-xs-12">
+                <img class="imgCar1 ml-4" src="../assets/icono-wols.jpeg" alt="auto"> 
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                <h5 class="text-center pt-3">Chevrolet</h5>
+                <p class="text-center">o similar , de categoría auto mediano</p>
+                <div class="atribute col-lg-12 ml-1">
+                    <img class="iconCar" src="../assets/icono-sesion.svg" alt="personas">
+                    <span class="pCar">4 personas</span>
+                    <img class="iconCar" src="../assets/suitcase-solid.svg" alt="valija">
+                    <span class="pCar">1 valija</span>
+                    <img class="iconCar" src="../assets/icono-ac.svg" alt="aire acondicionado">
+                    <span class="pCar">A/C</span>
+                    <img class="iconCar" src="../assets/icono-automatico.jpeg" alt="automatico">
+                    <span class="pCar">Automático</span>
+                </div>
+                <p class="titleFirst text-center pt-3">Precio final por día  AR$ 9920</p>
+            </div>    
+            <div class="col-lg-3 col-xs-12">
+                <img class="imgCar2 ml-4" src="../assets/chevro.jpg" alt="chevrolet">
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                <h5 class="text-center pt-3">Nissan Kicks</h5>
+                <p class="text-center">o similar , de categoría auto mediano</p>
+                <div class="atribute col-lg-12 ml-1">
+                    <img class="iconCar" src="../assets/icono-sesion.svg" alt="personas">
+                    <span class="pCar">4 personas</span>
+                    <img class="iconCar" src="../assets/suitcase-solid.svg" alt="valija">
+                    <span class="pCar">1 valija</span>
+                    <img class="iconCar" src="../assets/icono-ac.svg" alt="aire acondicionado">
+                    <span class="pCar">A/C</span>
+                    <img class="iconCar" src="../assets/icono-automatico.jpeg" alt="automatico">
+                    <span class="pCar">Automático</span>
+                </div>
+                <p class="titleFirst text-center pt-3">Precio final por día  AR$ 12780</p>
+            </div>    
+            <div class="col-lg-3 col-xs-12">
+                <img class="imgCar1 ml-4" src="../assets/nissan-kicks.jpg" alt="auto"> 
+            </div>
+            <div class="col-lg-3 col-xs-12">
+                <h5 class="text-center pt-3">Peugeot 208</h5>
+                <p class="text-center">o similar , de categoría auto mediano</p>
+                <div class="atribute col-lg-12 ml-1">
+                    <img class="iconCar" src="../assets/icono-sesion.svg" alt="personas">
+                    <span class="pCar">4 personas</span>
+                    <img class="iconCar" src="../assets/suitcase-solid.svg" alt="valija">
+                    <span class="pCar">1 valija</span>
+                    <img class="iconCar" src="../assets/icono-ac.svg" alt="aire acondicionado">
+                    <span class="pCar">A/C</span>
+                    <img class="iconCar" src="../assets/icono-automatico.jpeg" alt="automatico">
+                    <span class="pCar">Automático</span>
+                </div>
+                <p class="titleFirst text-center pt-3">Precio final por día  AR$ 11520</p>
+            </div>    
+            <div class="col-lg-3 col-xs-12">
+                <img class="imgCar2 ml-4" src="../assets/peugeot208.jpg" alt="chevrolet">
+            </div>
+        </div> 
+        </div> 
+        <!-- footer -->
+        <footer>
+            <div class="row pt-3" style="background-color: rgb(35,196,194);">
+                <div class="col-lg-12 col-xs-12">
+                    <p class="titleFoot text-center pb-2 pt-2">Seguinos en redes
+                        <img class="redes mr-lg-1" src="../assets/icono-ig.png" alt="logo instagram" title="isntagram">
+                        <img class="redes mr-lg-1" src="../assets/icono-face.png" alt="logo facebook" title="facebook">
+                        <img class="redes mr-lg-1" src="../assets/twit-icon.png" alt="logo twitter" title="twitter">
+                    </p>
+                </div>
+            </div>    
+        </footer> 
+    </div>     
+    <!-- fin footer -->
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>  
+    <!-- fin aos -->
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>    
+    <!-- fin bootstrap -->
+    <!-- script JS -->
+    <script src="../js/auto.js"></script>
+</body>
+</html>

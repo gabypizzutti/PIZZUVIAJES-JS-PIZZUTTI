@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Nombre de la web e icono -->
+  <title>Vuelo - Pizzu Viajes</title>
+  <link rel="icon" href="../assets/world.jpg" alt="logo">
+  <!-- meta description -->
+  <meta name="description" content="Pizzu Viajes, la agencia de viajes con precios accesibles, para que puedas concretar tu viaje soñado">
+  <!-- meta keywords -->
+  <meta name="keywords" content="agencia de viajes, vuelo, origen, destino, fecha de salida, fecha de llegada,  reserva de vuelo, compra de vuelo">
+  <!-- mi css animate -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Pacifico&family=Permanent+Marker&family=Raleway:ital,wght@0,100;1,100;1,200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Pacifico&family=Permanent+Marker&family=Raleway:ital,wght@0,100;1,100;1,200&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+  <!-- mi css -->
+  <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+</head>
+<!-- body -->
+<body>
+  <div class="container-fluid">
+    <div class="row no-gutters">
+      <div class="item col-lg-12 col-xs-12">  
+        <span class="pl-2"><img class="icono" src="../assets/icono-phone.svg" alt="phone" title="telefono">0810-222-3333</span>
+        <span class="pl-2"><img class="icono" src="../assets/icono-wtp.png" alt="wtp" title="whatsapp">+5411 2233-4455</span>
+        <span class="pl-2"><img class="icono" src="../assets/icono-help.svg" alt="help" title="ayuda">Ayuda</span>
+        <span class="pl-2 pr-2"><img class="icono" src="../assets/icono-sesion.svg" alt="sesion" title="inicar sesion">Iniciar sesión</span>
+      </div>  
+    </div>   
+     <!--header  -->
+    <header>
+      <div class="row no-gutters">
+        <div class="col-lg-12 col-xs-12">
+          <!-- nav -->
+          <nav class="navbar navbar-expand-lg navbar-light"> 
+            <a class="botonIndex animate__animated animate__heartBeat text-decoration-none" href="../index.html">
+              <img class="logo d-block mx-auto" src="../assets/globo.svg" alt="logo pizzu viajes" title="pizzu viajes">
+              <h1 class="nombreLogo">PIZZU VIAJES</h1>
+            </a> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html"><img class="imagen"  src="../assets/plane-solid.svg" alt="avion" title="avion">VUELO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="hotel.html"><img class="imagen" src="../assets/bed-solid.svg" alt="hotel" title="hotel">HOTEL</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="auto.html"><img class="imagen" src="../assets/car-solid.svg" alt="auto" title="auto">AUTO</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="paquete.html"><img class="imagen" src="../assets/suitcase-solid.svg" alt="paquete" title="paquete">PAQUETE</a>
+                </li>
+              </ul>
+            </div>    
+          </nav>
+          <!-- fin nav -->
+        </div> 
+      </div>  
+    </header>  
+    <!-- fin header -->
+    <div class="col-lg-12 col-xs-12">
+      <div class="row pt-lg-3 justify-content-lg-center pb-2">
+        <button id="historialCompra" type="button" class="btn btn-primary">Utilizar última búsqueda</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h3 class="titleFirst pb-3 mt-3">Selecciona tu vuelo</h3>
+      </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-lg-center">
+      <div class="row">
+        <div class="col-lg-12 col-xs-12">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input ml-2" type="radio" name="tramo" id="idaYVuelta"  value="ida y vuelta">
+            <label class="form-check-label ml-2" for="inlineRadio1">Ida y vuelta</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input ml-4" type="radio" name="tramo" id="ida"  value="ida">
+            <label class="form-check-label ml-4" for="inlineRadio2">Solo ida</label>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="container-fluid d-flex justify-content-lg-center">
+      <div class="row" id="formulario">        
+        <div class="form-inline">
+          <label class="my-1 mr-2 ml-3" id="origen" for="inlineFormCustomSelectPref">ORIGEN</label>
+          <select id = "seleccionOrigen" class="custom-select my-1 mr-sm-2 mb-3 mt-4" style="width: 190px" id="inlineFormCustomSelectPref">
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Bariloche">Bariloche</option>
+            <option value="Cordoba">Córdoba</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Bahia Blanca">Bahía Blanca</option>
+            <option value="Salta">Salta</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="Tucuman">Tucumán</option>
+            <option value="San Juan">San Juan</option>
+            <option value="Rio de Janeiro">Río de Janeiro</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Peru">Perú</option>
+            <option value="Mexico">México</option>
+          </select>
+        </div>
+        <div class="form-inline">
+          <label class="my-1 mr-2 ml-3" id= "destino" for="inlineFormCustomSelectPref">DESTINO</label>
+          <select id = "seleccionDestino" class="custom-select my-1 mr-sm-2 mb-4 mt-4" style="width: 190px" id="inlineFormCustomSelectPref">
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Bariloche">Bariloche</option>
+            <option value="Cordoba">Córdoba</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Bahia Blanca">Bahía Blanca</option>
+            <option value="Salta">Salta</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="Tucuman">Tucumán</option>
+            <option value="San Juan">San Juan</option>
+            <option value="Rio de Janeiro">Río de Janeiro</option>
+            <option value="Montevideo">Montevideo</option>
+            <option value="Peru">Perú</option>
+            <option value="Mexico">México</option>
+          </select>
+        </div>
+      </div>
+    </div> 
+    <p id="elegirTramo"></p>
+    <div class="container-fluid d-flex justify-content-lg-center">
+      <div class="row" id="formulario">  
+        <div class="form-inline">
+          <label  class="ml-3 mt-2" for="inputState">FECHA DE IDA</label>
+          <div>
+            <input id = "fechaIda" type="date" name="fechaIda"  class="form-control ml-3 mt-2" style="width:165px;">
+          </div>
+        </div>  
+        <label id= "divFechaRegreso1"  class="ml-3 mt-4 mt-lg-3" for="inputState">FECHA DE REGRESO</label>  
+        <div id="divFechaRegreso" class="form-inline">
+          <input id = "fechaRegreso" type="date" name="fechaRegreso" class="form-control ml-2 mt-4 mt-lg-3" style="width:165px;">
+        </div>  
+      </div>
+    </div>
+  </div> 
+  <div class="row" id="formulario">
+    <div class="col-lg-12 col-xs-12 d-flex justify-content-lg-center">
+      <h5 class="titleFirst pb-2 mt-4 ml-3 ml-lg-2">Cantidad de pasajeros</h5>
+    </div>  
+  </div>
+  <div class="container-fluid d-flex justify-content-lg-center" id="formulario">
+    <div class="form-inline pt-lg-3 pt-4 pl-lg-5" style="width: 130px;">
+      <label class="typePax ml-3" for="Adults">Adultos</label>
+      <select id ="adultos" name="adults" value="adults" class="form-control mt-lg-0 ml-2 mt-2 mb-0 text-center" style="width:70px";>
+        <option class="text-center" value="1">1</option>
+        <option class="text-center" value="2">2</option>
+        <option class="text-center" value="3">3</option>
+        <option class="text-center" value="4">4</option>
+        <option class="text-center" value="5">5</option>
+      </select>
+    </div> 
+    <div class="form-inline pt-3 ml-3" style="width: 170px;">
+      <label class="typePax" for="child">Menores (2 a 11 años)</label>
+      <select id = "nino" name="child" value="child" class="form-control ml-lg-5 ml-3" style="width: 70px";>
+        <option class="text-center" value="0">0</option>
+        <option class="text-center" value="1">1</option>
+        <option class="text-center" value="2">2</option>
+        <option class="text-center" value="3">3</option>
+        <option class="text-center" value="4">4</option>
+        <option class="text-center" value="5">5</option>
+      </select>
+    </div>
+    <div class="form-inline pt-3" style="width: 170px;">
+      <label class="typePax mr-2" for="baby">Bebé (0 a 2 años)</label>
+      <select id = "bebe" name="baby" value="baby" class="form-control ml-3 ml-lg-4" style="width: 70px";>
+        <option class="text-center" value="0">0</option>
+        <option class="text-center" value="1">1</option>
+        <option class="text-center" value="2">2</option>
+        <option class="text-center" value="3">3</option>
+        <option class="text-center" value="4">4</option>
+        <option class="text-center" value="5">5</option>
+      </select>
+    </div> 
+  </div>  
+  <!-- boton para iniciar el uso de las funciones -->
+  <div class="col-lg-12 col-xs-12">
+    <div class="row pt-lg-3 justify-content-lg-center pb-4">
+      <button id="cotizar" type="button" class="btn btn-primary">Cotiza tu vuelo!</button>
+    </div>
+  </div>
+  <div id="opcionesDeVuelo" style="display:none">
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h4 class="titleFirst recomendation pb-3 pt-3">Estas recomendaciones son para vos...</h4>
+      </div>  
+    </div>   
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h5 class="titleFirst pb-3"><u><strong>IDA</strong></u>:
+        <span id="resultadoFechaIda"></span>
+        </h5>
+      </div>  
+    </div> 
+    <div class="container-fluid d-flex justify-content-lg-center">
+      <div class="table-responsive-xs">  
+        <table class="table-responsive table-borderless ml-lg-4">
+          <thead class="col-xs-12">
+            <tr>
+              <th scope="col" style="width:300px;"><img class="icono" src="../assets/plane-departure-solid.svg" alt="Aeropuerto de salida" title="Aeropuerto de salida">Aeropuerto de salida</th>
+              <th scope="col" style="width:150px;"><img class="icono" src="../assets/clock-regular.svg" alt="sale" title="sale">Sale</th>
+              <th scope="col" style="width:150px;"><img class="icono" src="../assets/clock-regular.svg" alt="llega" title="llega">Llega</th>
+              <th scope="col" style="width:300px;"><img class="icono" src="../assets/plane-arrival-solid.svg" alt="Aeropuerto de llegada" title="Aeropuerto de llegada">Aeropuerto de llegada</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class='ml-2 mr-2'>
+              <td id="ciudadOrigen">Buenos Aires - Aeropuerto Jorge Newberry</td>
+              <td>13:00hs</td>
+              <td>15:00hs</td>
+              <td id="ciudadDestino">Aeropuerto Internacional Cataratas del Iguazú</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> 
+    <div id="regresoFecha" style="display:none">
+      <div class="row">
+        <div class="col-lg-12 col-xs-12">
+          <h5 class="titleFirst pb-3 mt-3"><u><strong>REGRESO </strong></u>:
+          <b><span id="resultadoFechaRegreso"></span></b>
+          </h5>
+        </div>  
+      </div> 
+      <div class="container-fluid d-flex justify-content-lg-center">
+        <div class="table-responsive-xs">    
+          <table class="table-responsive table-borderless ml-lg-4">
+            <thead class="col-xs-12">
+              <tr>
+                <th scope="col" style="width:300px;"><img class="icono" src="../assets/plane-departure-solid.svg" alt="Aeropuerto de salida" title="Aeropuerto de salida">Aeropuerto de salida</th>
+                <th scope="col" style="width:150px"><img class="icono" src="../assets/clock-regular.svg" alt="sale" title="sale">Sale</th>
+                <th scope="col" style="width:150px"><img class="icono" src="../assets/clock-regular.svg" alt="llega" title="llega">Llega</th>
+                <th scope="col" style="width:300px;"><img class="icono" src="../assets/plane-arrival-solid.svg" alt="Aeropuerto de llegada" title="Aeropuerto de llegada">Aeropuerto de llegada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class='ml-2 mr-2'>
+                <td id="ciudadDestinoRegreso">Aeropuerto Internacional Cataratas del Iguazú</td>
+                <td >17:00hs</td>
+                <td >19:00hs</td>
+                <td id="ciudadOrigenRegreso">Buenos Aires - Aeropuerto Jorge Newberry</td>
+             </tr>
+            </tbody>
+          </table>
+        </div> 
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-xs-12">
+          <h5 class="titleFirst mt-4 ml-1 mr-1 mb-3">Precio final AR$ <b id="precioFinal"></b><i>(incluye tasas e impuestos)</i></h5>
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-xs-12">
+          <h5 class="titleFirst pb-3"><u><strong>IDA </strong></u> 
+          <span id="resultadoFechaIda1"></span> 
+          </h5>    
+        </div>  
+      </div> 
+      <div class="container-fluid d-flex justify-content-lg-center">  
+        <div class="table-responsive-xs">  
+          <table class="table-responsive table-borderless ml-lg-4">
+            <thead>
+              <tr>
+                <th scope="col-xs-12" style="width:300px;"><img class="icono" src="../assets/plane-departure-solid.svg" alt="Aeropuerto de salida" title="Aeropuerto de salida">Aeropuerto de salida</th>
+                <th scope="col-xs-12" style="width:150px;"><img class="icono" src="../assets/clock-regular.svg" alt="sale" title="sale">Sale</th>
+                <th scope="col-xs-12" style="width:150px;"><img class="icono" src="../assets/clock-regular.svg" alt="llega" title="llega">Llega</th>
+                <th scope="col-xs-12" style="width:300px;"><img class="icono" src="../assets/plane-arrival-solid.svg" alt="Aeropuerto de llegada" title="Aeropuerto de llegada">Aeropuerto de llegada</th>
+             </tr>
+            </thead>
+            <tbody>
+              <tr class='ml-2 mr-2'>
+                <td id="ciudadOrigen2">Buenos Aires - Aeropuerto Jorge Newberry</td>
+                <td>17:00hs</td>
+                <td>19:00hs</td>
+                <td id="ciudadDestino2"> Aeropuerto Internacional Cataratas del Iguazú</td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+      </div>   
+      <div id="regresoFecha1" style="display: none;">
+      <div class="row" >
+        <div class="col-lg-12 col-xs-12">
+          <h5 class="titleFirst pb-3 mt-3"><u><strong>REGRESO </strong></u>:
+            <span id="resultadoFechaRegreso1"></span>
+          </h5>
+        </div>   
+      </div>
+      <div class="container-fluid d-flex justify-content-lg-center"> 
+        <div class="table-responsive-xs">   
+          <table class="table-responsive table-borderless ml-lg-4">
+            <thead class="col-xs-12">
+              <tr>
+                <th scope="col" style="width:300px;"><img class="icono" src="../assets/plane-departure-solid.svg" alt="Aeropuerto de salida" title="Aeropuerto de salida">Aeropuerto de salida</th>
+                <th scope="col" style="width:150px"><img class="icono" src="../assets/clock-regular.svg" alt="sale" title="sale">Sale</th>
+                <th scope="col" style="width:150px"><img class="icono" src="../assets/clock-regular.svg" alt="llega" title="llega">Llega</th>
+                <th scope="col" style="width:300px;"><img class="icono" src="../assets/plane-arrival-solid.svg" alt="Aeropuerto de llegada" title="Aeropuerto de llegada">Aeropuerto de llegada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class='ml-2 mr-2'>
+                <td id="regresoCiudadDestino">Aeropuerto Internacional Cataratas del Iguazú</td>
+                <td>11:00hs</td>
+                <td>13:00hs</td>
+                <td id="regresoCiudadOrigen">Buenos Aires - Aeropuerto Jorge Newberry</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>   
+    </div> 
+    <div class="row">
+      <div class="col-lg-12 col-xs-12">
+        <h5 class="titleFirst pb-3 mt-4 ml-1 mr-1">Precio final AR$ <b id="precioFinal1"> 17420 </b><i>(incluye tasas e impuestos)</i></h5>
+      </div>  
+    </div> 
+    <div class="row pb-3 justify-content-center">
+      <a href="./datosdepax.html"><input class="btn-primary" type="button" value="Continuar"></a>
+    </div> 
+  </div>   
+    <!-- footer -->
+    <footer>
+        <div class="row foot">
+            <div class="col-lg-12 col-xs-12">
+                <p class="titleFoot text-center pb-2 pt-3">Seguinos en redes
+                    <img class="redes mr-lg-1 ml-2" src="../assets/icono-ig.png" alt="logo instagram" title="isntagram">
+                    <img class="redes mr-lg-1" src="../assets/icono-face.png" alt="logo facebook" title="facebook">
+                    <img class="redes mr-lg-1" src="../assets/twit-icon.png" alt="logo twitter" title="twitter">
+                </p>
+            </div>
+        </div>    
+    </footer>
+  </div>     
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script> 
+  <!-- bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>    
+  <!-- script JS -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

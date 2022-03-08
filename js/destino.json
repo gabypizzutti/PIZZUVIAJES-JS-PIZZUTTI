@@ -1,0 +1,16 @@
+ [
+    {"id": 1, "nombre": "Jujuy", "codigoDestino": "JUJ", "precio": 7650},
+    {"id": 2, "nombre": "Tucuman", "codigoDestino": "TUC","precio":  8795},
+    {"id": 3, "nombre": "Salta", "codigoDestino": "SLA","precio": 8230},
+    {"id": 4, "nombre": "Buenos Aires" ,"codigoDestino": "BUE","precio": 9870},
+    {"id": 5, "nombre": "Bariloche", "codigoDestino": "BRC", "precio": 10234},
+    {"id": 6, "nombre":  "Cordoba","codigoDestino":   "COR","precio":  9210},
+    {"id": 7, "nombre":  "Mendoza", "codigoDestino":  "MDZ", "precio": 7976},
+    {"id": 8, "nombre":  "Bahia Blanca","codigoDestino":  "BHI","precio": 6547},
+    {"id": 9, "nombre": "San Juan", "codigoDestino": "UAQ", "precio": 6890},
+    {"id": 10, "nombre":  "Rio de Janeiro", "codigoDestino": "GIG","precio": 19870},
+    {"id": 11, "nombre":  "Montevideo", "codigoDestino":  "MVD", "precio": 17453},
+    {"id": 12, "nombre":  "Santiago de Chile", "codigoDestino":  "SCL","precio": 16521},
+    {"id": 13, "nombre":  "Peru", "codigoDestino":  "LIM", "precio": 12054},
+    {"id": 14, "nombre":  "Mexico", "codigoDestino":  "MEX", "precio": 21398}
+]

@@ -1,0 +1,135 @@
+/* tamaño de las imagenes */
+.item{
+    text-align: right;
+}
+
+.icono{
+    width: 20px;
+}
+
+.logo{
+	width: 50px;
+}
+
+.provincia{
+    width:250px; 
+	height:200px;
+}
+
+.redes{
+	width: 30px;
+}
+
+.star{
+	width: 30%;
+}
+
+.imgCar1, .imgCar2{
+	width: 250px;
+	height: 200px;
+}
+
+.iconCar{
+	width: 15px;
+}
+
+.imagen{
+	width:20px;
+}
+
+.method{
+	width: 30px;
+}
+/* fin imagenes */
+
+.pCar{
+	font-size: 12px;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.botonIndex{
+	text-decoration: none;
+}
+
+.nombreLogo{
+	font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
+	font-size: 20px;
+	font-weight: bold ; 
+	color:white;
+}
+
+.navbar-expand-lg{
+    background-color: rgb(35,196,194)!important;
+}
+
+#navbarNav{
+    justify-content: center;
+}
+
+.btn-primary{
+	background-color: rgb(35,196,194);
+	border-color: rgb(35,196,194);
+    font-weight: 500 ;
+}
+
+.nav {
+	list-style-type:none;
+	font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts */
+} 
+
+.titleFirst{
+    font-family: 'Zen Kurenaido', sans-serif;
+	margin-bottom: 0px;
+    text-align: center;
+}
+
+.titleFoot{
+	font-family: 'Permanent Marker', cursive; /*letra extraida de google fonts*/
+	color: white;
+}
+
+nav ul li{ 
+	letter-spacing: 1px; 
+	text-decoration: none;
+	list-style-type: none;
+	box-sizing: border-box;
+} 
+
+nav ul li a {
+	text-decoration: none;
+	color: white; 
+}
+
+nav ul li a:hover {
+	color: #0771db; 
+} 
+
+.country{
+	margin-left: 5rem !important;
+}
+
+.typeDocument{
+	margin-left: 4.5rem !important;
+}
+
+.imgFlight{
+	width: 400px;
+}
+
+.foot{
+    background-color: rgb(35,196,194);
+}
+
+.precioPaquete{
+	color:cadetblue;
+	font-weight: bolder;
+}
+
+#mostrarDatos{
+	border-color: grey;
+	border-width: 12rem;
+}
