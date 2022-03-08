@@ -1,4 +1,4 @@
-///////////////// EVENTOS PAGE AUTO ///////////////
+///////////////// PAGE AUTO ///////////////
 let btnCotizarAuto = document.getElementById("btnAuto");
 btnCotizarAuto.addEventListener("click", cotizarAuto);
 

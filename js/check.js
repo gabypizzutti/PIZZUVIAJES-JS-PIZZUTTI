@@ -72,7 +72,7 @@ function mostrarDatosPago(){
             </div>
         </div>
         `
-        // una vez que pasajero finaliza compra, se borra el storage
+        // una vez que usuario finaliza compra, se borra el storage
         let btnPago = document.getElementById("confirmacionPago")
         btnPago.addEventListener("click", confirmacionPago) 
         localStorage.clear();
