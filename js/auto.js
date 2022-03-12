@@ -39,5 +39,13 @@ let horaDevo = document.getElementById("horaDevolucion");
 horaDevo.addEventListener("change",horaDevolucion);
 
 function cotizarAuto(){
-    document.getElementById("opcionesAuto").style.display = "block";
+    let retiro = elegirLugarRetiro();
+    let fechaR = eleccionFechaRetiro ();
+    let hora = horaRetiro();
+    let fechaDevo = eleccionFechaDevolucion();
+    let horaDevo = horaDevolucion();
+
+    if(fechaR != "" && hora != "" && fechaDevo != "" &&horaDevo != "" ) {
+        document.getElementById("opcionesAuto").style.display = "block";
+    }
 }
